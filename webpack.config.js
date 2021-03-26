@@ -37,20 +37,23 @@ const config = {
             {
                 test: /\.scss$/,
                 use: [{
-                        loader: miniCssExtractPlugin.loader,
-                        options: {
-                            hmr: process.env.NODE_ENV === 'production',
-                        },
+                        loader: miniCssExtractPlugin.loader
                     },
                     'css-loader',
                     {
                         loader: 'postcss-loader',
                         options: {
-                            plugins: [
-                                require('autoprefixer')({}),
-
-                            ]
-                        }
+                            postcssOptions: {
+                              plugins: [
+                                [
+                                    require('autoprefixer')({}),
+                                  {
+                                    // Options
+                                  },
+                                ],
+                              ],
+                            },
+                          }
                     },
                     'sass-loader'
                 ]
