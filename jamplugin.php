@@ -23,7 +23,7 @@ use jamal\jamplugin\shortcodes\shortcodes;
 final class jamplugin extends wpplugin
 {
 
-    
+
     private static $instance = null;
 
     public static function getInstance($mode): jamplugin
@@ -36,7 +36,7 @@ final class jamplugin extends wpplugin
 
     protected function __construct($mode)
     {
-        parent::__construct("jamplugin", '', __FILE__,$mode);
+        parent::__construct("jamplugin", __FILE__,$mode);
         global $jampluginTwig;
         $jampluginTwig = $this->initTwig(['views'], $this->getPluginPath("template")['dir']);
 
