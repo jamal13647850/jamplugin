@@ -1,0 +1,91 @@
+/*div.learndash.learndash_post_sfwd-courses.user_has_no_access {
+    margin-top: 100px;
+}*/
+#primary {
+  margin: 6.1em 0 !important; }
+
+header.site-header, div.main-header-bar {
+  background: linear-gradient(90deg, white 0%, #d70d09 50%, #b00b07 80%, #A60A07 100%); }
+
+div.elementor-tab-content p {
+  text-align: justify !important; }
+
+#wellcome-message {
+  -webkit-animation-name: messageShake;
+          animation-name: messageShake;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes messageShake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
+
+@keyframes messageShake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
+
+div.ld-progress-percentage.ld-secondary-color, div.ld-progress-bar {
+  display: none; }
+
+.woocommerce a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce #respond input#submit, .woocommerce button.button.alt.disabled, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link, .wc-block-grid__product-onsale {
+  border-color: #A60A07 !important;
+  background-color: #A60A07 !important; }
+
+@media only screen and (max-width: 400px) {
+  #learndash-tooltips {
+    left: 0 !important; } }
+
+li.ieltwrtask select#input_3_7 {
+  text-align: left !important;
+  direction: ltr !important; }
+  li.ieltwrtask select#input_3_7 > option {
+    text-align: left !important;
+    direction: ltr !important; }
+
+div.ast-below-header-wrap.ast-below-header-1 {
+  display: none; }
+

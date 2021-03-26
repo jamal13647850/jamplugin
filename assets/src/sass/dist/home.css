@@ -1,0 +1,20 @@
+.post-title {
+  text-align: right !important;
+}
+
+#bas_btnAjax {
+  background-color: #61b82d !important;
+  border: 3px solid #009a3c !important;
+}
+
+div.woocommerce-MyAccount-content > div.woocommerce-notices-wrapper ~ p:nth-child(2) {
+  display: none;
+}
+
+div.acf-form-submit > input[type=submit] {
+  margin: 0 auto;
+  display: block;
+  background-color: #61b82d !important;
+  border: 3px solid #009a3c !important;
+  color: #000000 !important;
+}

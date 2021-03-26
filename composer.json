@@ -1,0 +1,24 @@
+{
+    "name": "jamal13647850/jamplugin",
+    "description": "A special wordpress plugin for jamplugin.com",
+    "type": "library",
+    "require": {
+        "pgsavis/wp-plugin-structure": "^2.0",
+        "pgsavis/mycustomcodes": "^1.0",
+        "twig/twig": "^3.0"
+    },
+    "authors": [{
+        "name": "Sayyed Jamal Ghasemi",
+        "email": "jamal13647850@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "jamal\\jamplugin\\classes\\": "classes/",
+            "jamal\\jamplugin\\hooks\\": "classes/hooks/",
+            "jamal\\jamplugin\\admin\\": "classes/admin/",
+            "jamal\\jamplugin\\shortcodes\\": "classes/shortcodes/",
+            "jamal\\jamplugin\\": "/"
+        },
+        "files": ["classes/lib/class-tgm-plugin-activation.php"]
+    }
+}
