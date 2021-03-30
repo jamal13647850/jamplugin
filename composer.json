@@ -17,7 +17,8 @@
             "jamal\\jamplugin\\hooks\\": "classes/hooks/",
             "jamal\\jamplugin\\admin\\": "classes/admin/",
             "jamal\\jamplugin\\shortcodes\\": "classes/shortcodes/",
-            "jamal\\jamplugin\\": "/"
+            "jamal\\jamplugin\\": "/",
+            "widgets\\": "widgets/"
         },
         "files": ["classes/lib/class-tgm-plugin-activation.php"]
     }
