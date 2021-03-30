@@ -14,8 +14,7 @@ class hooks extends wphooks
     function registerHooks()
     {
         $action = new Action();
-        $action = new LoadCrisp($action);
-        $action = new LoadNajva($action);
+        $action = new LoadTgmp($action);
         $action = new Menu($action);
         $action->loadBody();
     }
