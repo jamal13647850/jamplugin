@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./assets/src/js/admin.js":
-/*!********************************!*\
-  !*** ./assets/src/js/admin.js ***!
-  \********************************/
+/***/ "./assets/src/js/home-rtl.js":
+/*!***********************************!*\
+  !*** ./assets/src/js/home-rtl.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logger */ \"./assets/src/js/logger.js\");\n/**\r\n * Created by Jamal on 8/3/2019.\r\n */\r\n\r\n\r\n(0,_logger__WEBPACK_IMPORTED_MODULE_0__.log)('hello admin');\n\n//# sourceURL=webpack://jamplugin/./assets/src/js/admin.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_rtl_home_rtl_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/rtl/home-rtl.scss */ \"./assets/src/sass/rtl/home-rtl.scss\");\n\n\n//# sourceURL=webpack://jamplugin/./assets/src/js/home-rtl.js?");
 
 /***/ }),
 
-/***/ "./assets/src/js/logger.js":
-/*!*********************************!*\
-  !*** ./assets/src/js/logger.js ***!
-  \*********************************/
+/***/ "./assets/src/sass/rtl/home-rtl.scss":
+/*!*******************************************!*\
+  !*** ./assets/src/sass/rtl/home-rtl.scss ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"log\": () => (/* binding */ log)\n/* harmony export */ });\n/**\r\n * Created by Jamal on 8/3/2019.\r\n */\r\nconst log = message => console.log(message);\n\n//# sourceURL=webpack://jamplugin/./assets/src/js/logger.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://jamplugin/./assets/src/sass/rtl/home-rtl.scss?");
 
 /***/ })
 
@@ -57,23 +57,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -90,7 +73,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./assets/src/js/admin.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./assets/src/js/home-rtl.js");
 /******/ 	
 /******/ })()
 ;

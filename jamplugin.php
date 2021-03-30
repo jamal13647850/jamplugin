@@ -63,16 +63,34 @@ final class jamplugin extends wpplugin
     {
         switch (self::getMode()) {
             case "development":
-                wp_register_style('home.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home.css');
-                wp_enqueue_style('home.css');
-
-                wp_enqueue_script('home.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home.js', [], '', true);
+                if ( is_rtl() ) {
+                    wp_register_style('home-rtl.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home-rtl.css');
+                    wp_enqueue_style('home-rtl.css');
+    
+                    wp_enqueue_script('home-rtl.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home-rtl.js', [], '', true);
+                }
+                else{
+                    wp_register_style('home.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home.css');
+                    wp_enqueue_style('home.css');
+    
+                    wp_enqueue_script('home.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home.js', [], '', true);
+                }
+                
                 break;
             case "production":
-                wp_register_style('home.min.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home.min.css');
-                wp_enqueue_style('home.min.css');
+                if ( is_rtl() ) {
+                    wp_register_style('home-rtl.min.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home-rtl.min.css');
+                    wp_enqueue_style('home-rtl.min.css');
+    
+                    wp_enqueue_script('home-rtl.min.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home-rtl.min.js', [], '', true);
+                }
+                else{
+                    wp_register_style('home.min.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home.min.css');
+                    wp_enqueue_style('home.min.css');
+    
+                    wp_enqueue_script('home.min.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home.min.js', [], '', true);
+                }
 
-                wp_enqueue_script('home.min.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home.min.js', [], '', true);
                 break;
         }
     }

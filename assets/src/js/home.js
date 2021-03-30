@@ -3,4 +3,5 @@
  */
 import mainclass from './mainclass'
 import '../sass/home.scss';
+
 mainclass.importImages();

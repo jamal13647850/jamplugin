@@ -10,7 +10,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const config = {
     entry: {
         admin: './assets/src/js/admin.js',
-        home: './assets/src/js/home.js'
+        home: './assets/src/js/home.js',
+        "home-rtl": './assets/src/js/home-rtl.js'
     },
     output: {
         filename: 'js/[name].min.js',
