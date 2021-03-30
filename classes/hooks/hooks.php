@@ -8,6 +8,7 @@ defined('ABSPATH') || exit();
 use jamal\wpmstructure\wphooks;
 use jamal\wpmstructure\Action;
 use jamal\jamplugin\admin\Menu;
+use jamal\jamplugin\admin\WidgetArea;
 class hooks extends wphooks
 {
 

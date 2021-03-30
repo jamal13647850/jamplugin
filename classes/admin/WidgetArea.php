@@ -1,7 +1,7 @@
 <?php
 declare (strict_types = 1);
 
-namespace jamal\jamplugin\hooks;
+namespace jamal\visamondial\admin;
 
 defined('ABSPATH') || exit();
 
