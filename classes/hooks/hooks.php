@@ -15,6 +15,7 @@ class hooks extends wphooks
     {
         $action = new Action();
         $action = new LoadTgmp($action);
+        $action = new WidgetArea($action);
         $action = new Menu($action);
         $action->loadBody();
     }
