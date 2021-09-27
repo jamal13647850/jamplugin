@@ -17,6 +17,7 @@ require_once trailingslashit(plugin_dir_path(__FILE__)) . '/vendor/autoload.php'
 use jamal\wpmstructure\wpplugin;
 use jamal\jamplugin\hooks\hooks;
 use jamal\jamplugin\shortcodes\shortcodes;
+use jamal\jamplugin\classes\loadAssets;
 use widgets\widgetInit;
 
 
@@ -63,38 +64,10 @@ final class jamplugin extends wpplugin
 
     function registerScriptsAndStyles()
     {
-        switch (self::getMode()) {
-            case "development":
-                if ( is_rtl() ) {
-                    wp_register_style('home-rtl.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home-rtl.css');
-                    wp_enqueue_style('home-rtl.css');
-    
-                    wp_enqueue_script('home-rtl.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home-rtl.js', [], '', true);
-                }
-                else{
-                    wp_register_style('home.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home.css');
-                    wp_enqueue_style('home.css');
-    
-                    wp_enqueue_script('home.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home.js', [], '', true);
-                }
-                
-                break;
-            case "production":
-                if ( is_rtl() ) {
-                    wp_register_style('home-rtl.min.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home-rtl.min.css');
-                    wp_enqueue_style('home-rtl.min.css');
-    
-                    wp_enqueue_script('home-rtl.min.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home-rtl.min.js', [], '', true);
-                }
-                else{
-                    wp_register_style('home.min.css', plugin_dir_url(__FILE__) . 'assets/dest/css/home.min.css');
-                    wp_enqueue_style('home.min.css');
-    
-                    wp_enqueue_script('home.min.js', plugin_dir_url(__FILE__) . 'assets/dest/js/home.min.js', [], '', true);
-                }
-
-                break;
-        }
+        $loadAssets=new loadAssets(
+           self::getMode(),
+        plugin_dir_url(__FILE__) . 'assets/dest/css/',
+         plugin_dir_url(__FILE__) . 'assets/dest/js/');
     }
 
     function registerAdminScriptsAndStyles()

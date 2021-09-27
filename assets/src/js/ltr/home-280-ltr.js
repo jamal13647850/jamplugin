@@ -1,0 +1,1 @@
+import '../../sass/ltr/home-280-ltr.scss';
