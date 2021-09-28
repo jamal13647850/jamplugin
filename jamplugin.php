@@ -68,6 +68,8 @@ final class jamplugin extends wpplugin
            self::getMode(),
         plugin_dir_url(__FILE__) . 'assets/dest/css/',
          plugin_dir_url(__FILE__) . 'assets/dest/js/');
+         $loadAssets->LoadScripts();
+         $loadAssets->LoadStyle();
     }
 
     function registerAdminScriptsAndStyles()
