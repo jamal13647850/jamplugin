@@ -22,8 +22,4 @@ sudo composer update
 
 
 rm -rf .git
-git init
-git status
-git add . 
-git commit -am "Initial commit"
-git status
+git init && git status && git add . && git commit -am "Initial commit" && git status
