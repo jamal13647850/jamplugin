@@ -5,7 +5,7 @@ Plugin URI: https://jamplugin.com
 Description: A special wordpress plugin for jamplugin.com
 Version: 1.0.0
 Author: Sayyed Jamal Ghasemi
-Author URI: https://www.linkedin.com/in/jamal1364/
+Author URI: https://jamalghasemi.com
 License: paid
 */
 declare (strict_types = 1);
