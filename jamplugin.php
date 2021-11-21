@@ -54,9 +54,7 @@ final class jamplugin extends wpplugin
     private function __clone()
     { }
 
-    private function __wakeup()
-    { }
-
+    
     function loginStylesheet()
     {
         // TODO: Implement loginStylesheet() method.
