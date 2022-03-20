@@ -17,7 +17,7 @@ require_once trailingslashit(plugin_dir_path(__FILE__)) . '/vendor/autoload.php'
 use jamal\wpmstructure\wpplugin;
 use jamal\jamplugin\hooks\hooks;
 use jamal\jamplugin\shortcodes\shortcodes;
-use jamal\jamplugin\classes\loadAssets;
+use jamal\wpmstructure\loadAssets;
 use widgets\widgetInit;
 
 
