@@ -20,11 +20,12 @@ class loadAssets
     private string $jsPath;
 
 
-    public function __construct(string $mode, string $cssPath, string $jsPath)
+    public function __construct(string $mode, string $cssPath, string $jsPath,string $domain)
     {
         $this->mode = $mode;
         $this->cssPath = $cssPath;
         $this->jsPath = $jsPath;
+        $this->domain = $domain;
     }
 
     public function LoadStyle()
@@ -214,20 +215,20 @@ class loadAssets
                 case "development":
 
                     if (is_rtl()) {
-                        $assets[$key]['handle'] = $key . '-rtl';
+                        $assets[$key]['handle'] = $key . '-rtl'.'-'.$this->domain;
                         $assets[$key]['src'] = $key . '-rtl';
                     } else {
-                        $assets[$key]['handle'] = $key . '-ltr';
+                        $assets[$key]['handle'] = $key . '-ltr'.'-'.$this->domain;
                         $assets[$key]['src'] = $key . '-ltr';
                     }
 
                     break;
                 case "production":
                     if (is_rtl()) {
-                        $assets[$key]['handle'] = $key . '-rtl-min';
+                        $assets[$key]['handle'] = $key . '-rtl-min'.'-'.$this->domain;
                         $assets[$key]['src'] = $key . '-rtl.min';
                     } else {
-                        $assets[$key]['handle'] = $key . '-ltr-min';
+                        $assets[$key]['handle'] = $key . '-ltr-min'.'-'.$this->domain;
                         $assets[$key]['src'] = $key . '-ltr.min';
                     }
 
