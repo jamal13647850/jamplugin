@@ -16,6 +16,7 @@
             "jamal\\jamplugin\\classes\\": "classes/",
             "jamal\\jamplugin\\hooks\\": "classes/hooks/",
             "jamal\\jamplugin\\admin\\": "classes/admin/",
+            "jamal\\calinsms\\ajax\\": "classes/ajax/",
             "jamal\\jamplugin\\shortcodes\\": "classes/shortcodes/",
             "jamal\\jamplugin\\": "/",
             "widgets\\": "widgets/"
