@@ -15,10 +15,10 @@ namespace jamal\jamplugin;
 defined('ABSPATH') || exit();
 require_once trailingslashit(plugin_dir_path(__FILE__)) . '/vendor/autoload.php';
 use jamal\wpmstructure\wpplugin;
-use jamal\jamplugin\hooks\hooks;
+use jamal\jamplugin\classes\AutoInstance;
 use jamal\jamplugin\shortcodes\shortcodes;
 use jamal\wpmstructure\loadAssets;
-use widgets\widgetInit;
+
 
 
 
@@ -42,9 +42,8 @@ final class jamplugin extends wpplugin
         global $jampluginTwig;
         $jampluginTwig = $this->initTwig(['views'], $this->getPluginPath("template")['dir']);
 
-        new hooks();
+        new AutoInstance();
         new shortcodes("lng");
-        $wgi=new widgetInit();
         if($mode=="development"){
             //add_action('phpmailer_init', [$bot,'mailtrap']);
         }
