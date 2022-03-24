@@ -64,7 +64,7 @@ final class jamplugin extends wpplugin
         $loadAssets=new loadAssets(
            self::getMode(),
         plugin_dir_url(__FILE__) . 'assets/dest/css/',
-         plugin_dir_url(__FILE__) . 'assets/dest/js/');
+         plugin_dir_url(__FILE__) . 'assets/dest/js/',jamplugin::getDomain());
          $loadAssets->LoadScripts();
          $loadAssets->LoadStyle();
     }
