@@ -9,8 +9,9 @@ defined('ABSPATH') || exit();
 class AutoInstance{
     public function __construct(){
         $classes=[
-            'hooks'=>'jamal\calinsms\hooks\hooks',
-            'widgetInit'=>'widgets\widgetInit'
+            'hooks'=>'jamal\jamplugin\hooks\hooks',
+            'widgetInit'=>'widgets\widgetInit',
+            'ADDCommands'=>'jamal\jamplugin\cli\ADDCommands',
         ];
 
         foreach($classes as $class){

@@ -10,7 +10,7 @@ use jamal\wpmstructure\wpshortcodes;
 
 class shortcodes extends wpshortcodes
 {
-    function mainFunction($atts)
+    function mainFunction($atts, $content, $tag)
     {
         $a = shortcode_atts(array(
             'form' => '',
