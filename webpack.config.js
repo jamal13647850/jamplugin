@@ -3,7 +3,7 @@
  */
 const path = require('path');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -151,14 +151,7 @@ module.exports = (env, { mode }) => {
                 new miniCssExtractPlugin({
                     filename: "css/[name].min.css"
                 }),
-                new OptimizeCssAssetsPlugin({
-                    assetNameRegExp: /\.css$/g,
-                    cssProcessor: require('cssnano'),
-                    cssProcessorPluginOptions: {
-                        preset: ['default', { discardComments: { removeAll: true } }],
-                    },
-                    canPrint: true
-                }),
+                new CssMinimizerPlugin(),
             ]
 
         );
