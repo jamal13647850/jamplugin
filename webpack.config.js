@@ -29,7 +29,7 @@ const config = {
         "home-core-rtl": './assets/src/js/rtl/home-core-rtl.js',
         "home-handheld-rtl": './assets/src/js/rtl/home-handheld-rtl.js',
         "home-print-rtl": './assets/src/js/rtl/home-print-rtl.js',
-       
+
     },
     output: {
         filename: 'js/[name].min.js',
@@ -38,67 +38,75 @@ const config = {
     mode: 'production',
     module: {
         rules: [{
-                test: /\.css$/,
-                use: [
-                    miniCssExtractPlugin.loader,
-                    'css-loader',
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            plugins: [
-                                require('autoprefixer')({}),
+            test: /\.css$/,
+            use: [
+                miniCssExtractPlugin.loader,
+                'css-loader',
+                {
+                    loader: 'postcss-loader',
+                    options: {
+                        plugins: [
+                            require('autoprefixer')({}),
 
-                            ]
-                        }
-                    },
-                ]
+                        ]
+                    }
+                },
+            ]
+        },
+        {
+            test: /\.scss$/,
+            use: [{
+                loader: miniCssExtractPlugin.loader
             },
+                'css-loader',
             {
-                test: /\.scss$/,
-                use: [{
-                        loader: miniCssExtractPlugin.loader
-                    },
-                    'css-loader',
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            postcssOptions: {
-                              plugins: [
-                                [
-                                    require('autoprefixer')({}),
-                                  {
+                loader: 'postcss-loader',
+                options: {
+                    postcssOptions: {
+                        plugins: [
+                            [
+                                require('autoprefixer')({}),
+                                {
                                     // Options
-                                  },
-                                ],
-                              ],
-                            },
-                          }
+                                },
+                            ],
+                        ],
                     },
-                    'sass-loader'
-                ]
+                }
             },
-            {
-                test: /\.(png|jpe?g|gif|webp)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: 'images',
-                        publicPath: '../images',
-                        name: './[name].[ext]'
-                    }
-                }]
+                'sass-loader'
+            ]
+        },
+        {
+            test: /\.(png|jpe?g|gif|webp)$/,
+            use: [{
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'images',
+                    publicPath: '../images',
+                    name: './[name].[ext]'
+                }
+            }]
+        },
+        {
+            test: /\.(eot|ttf|woff|woff2)/,
+            type: 'asset/resource',
+            generator: {
+                filename: './fonts/[name][ext]',
             },
-            {
-                test: /\.(eot|ttf|woff|woff2)/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: 'fonts',
-                        publicPath: '../fonts',
-                        name: './[name].[ext]'
-                    }
-                }]
-            }
+            // use: [{
+            //     loader: 'file-loader',
+            //     type: 'asset/resource',
+            //     generator: {
+            //         filename: './fonts/[name][ext]',
+            //     },
+            //     options: {
+            //         outputPath: 'fonts/',
+            //         publicPath: '../fonts',
+            //         name: './[name].[ext]'
+            //     }
+            // }]
+        }
         ]
     },
     plugins: [
@@ -148,11 +156,11 @@ module.exports = (env, { mode }) => {
         config.mode = "production";
 
         config.plugins.push(...[
-                new miniCssExtractPlugin({
-                    filename: "css/[name].min.css"
-                }),
-                new CssMinimizerPlugin(),
-            ]
+            new miniCssExtractPlugin({
+                filename: "css/[name].min.css"
+            }),
+            new CssMinimizerPlugin(),
+        ]
 
         );
 
