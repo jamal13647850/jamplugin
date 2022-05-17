@@ -1,12 +1,12 @@
 {
 	"name": "jamplugin",
-	"version": "1.0.1",
+	"version": "1.0.0",
 	"download_url": "https://dl.jamalghasemi.com/plugins/my/jamplugin/jamplugin-1.0.0.zip",
 
 	"homepage": "https://jamplugin.com/",
-	"requires": "4.5",
-	"tested": "4.8",
-	"last_updated": "2017-01-01 16:17:00",
+	"requires": "5.8",
+	"tested": "5.9.3",
+	"last_updated": "2022-01-01 16:17:00",
 	"upgrade_notice": "Here's why you should upgrade...",
 
 	"author": "Sayyed Jamal Ghasemi",
