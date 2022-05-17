@@ -47,6 +47,12 @@ final class jamplugin extends wpplugin
         if($mode=="development"){
             //add_action('phpmailer_init', [$bot,'mailtrap']);
         }
+
+        $jampluginUpdateChecker = \Puc_v4_Factory::buildUpdateChecker(
+            'https://dl.jamalghasemi.com/plugins/my/jamplugin/jamplugin.json',
+            __FILE__, //Full path to the main plugin file or functions.php.
+            'jamplugin'
+        );
     }
 
 
