@@ -3,8 +3,8 @@
     "description": "A special wordpress plugin for jamplugin.com",
     "type": "library",
     "require": {
-        "pgsavis/wp-plugin-structure": "^2.0",
-        "pgsavis/mycustomcodes": "^1.0",
+        "pgsavis/wp-plugin-structure": "^3.0",
+        "pgsavis/mycustomcodes": "^2.5",
         "twig/twig": "^3.0",
         "yahnis-elsts/plugin-update-checker": "^4.11"
     },
