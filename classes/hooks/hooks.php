@@ -18,6 +18,7 @@ class hooks extends wphooks
         $action = new LoadTgmp($action);
         $action = new WidgetArea($action);
         $action = new Menu($action);
+        //$action = new ACFImporter($action);
         $action->loadBody();
     }
 }
