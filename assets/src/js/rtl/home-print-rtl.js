@@ -1,1 +1,0 @@
-import '../../sass/rtl/home-print-rtl.scss';

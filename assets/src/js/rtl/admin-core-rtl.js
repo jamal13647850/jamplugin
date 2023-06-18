@@ -1,1 +1,0 @@
-import '../../sass/rtl/admin-core-rtl.scss';

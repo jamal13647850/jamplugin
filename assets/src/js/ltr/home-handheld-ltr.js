@@ -1,1 +1,0 @@
-import '../../sass/ltr/home-handheld-ltr.scss';

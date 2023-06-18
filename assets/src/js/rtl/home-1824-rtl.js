@@ -1,1 +1,0 @@
-import '../../sass/rtl/home-1824-rtl.scss';
