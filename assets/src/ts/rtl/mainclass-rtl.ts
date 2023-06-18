@@ -6,7 +6,7 @@ export default class mainclass {
         const images = mainclass.importAll(require.context('../../images', false, /\.(png|jpe?g|svg|gif|webp)$/));
     }
 
-    static importAll(r) {
+    static importAll(r:any) {
         return r.keys().map(r);
     }
 
