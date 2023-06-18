@@ -1,0 +1,1 @@
+import '../../sass/rtl/home-1025-rtl.scss';

@@ -1,0 +1,1 @@
+import '../../sass/rtl/home-handheld-rtl.scss';
