@@ -6,8 +6,8 @@
       "strict": true,
       "esModuleInterop": true,
       "sourceMap": true,
-      "outDir": "dist",
-      "rootDir": "src",
+      "outDir": "assets/dest/js",
+      "rootDir": "assets/src/ts",
       "resolveJsonModule": true
     },
     "include": ["./assets/src/ts/**/*.ts"],
