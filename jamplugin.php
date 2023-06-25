@@ -70,7 +70,7 @@ final class jamplugin extends wpplugin
         $loadAssets=new loadAssets(
            self::getMode(),
         plugin_dir_url(__FILE__) . 'assets/dest/css/',
-         plugin_dir_url(__FILE__) . 'assets/dest/js/',jamplugin::getDomain());
+         plugin_dir_url(__FILE__) . 'assets/dest/js/',$this->getDomain());
          
          //$loadAssets->addCSS('home-core');
          //$loadAssets->addJS('home-core');
