@@ -74,11 +74,13 @@ final class jamplugin extends wpplugin
          
          //$loadAssets->addCSS('home-core');
          //$loadAssets->addJS('home-core');
-         //$loadAssets->LoadScripts();
-         //$loadAssets->LoadStyle();
-
          //$loadAssets->addCSSForSpecificPage('home-page',33);
-         //$loadAssets->LoadStyleOnSpecificPage();
+         //$loadAssets->addJSForSpecificPage('home-page',33);
+         //$loadAssets->LoadScripts()->LoadStyle();
+      
+
+         
+       
     }
 
     function registerAdminScriptsAndStyles()
