@@ -71,8 +71,14 @@ final class jamplugin extends wpplugin
            self::getMode(),
         plugin_dir_url(__FILE__) . 'assets/dest/css/',
          plugin_dir_url(__FILE__) . 'assets/dest/js/',jamplugin::getDomain());
-         $loadAssets->LoadScripts();
-         $loadAssets->LoadStyle();
+         
+         //$loadAssets->addCSS('home-core');
+         //$loadAssets->addJS('home-core');
+         //$loadAssets->LoadScripts();
+         //$loadAssets->LoadStyle();
+
+         //$loadAssets->addCSSForSpecificPage('home-page',33);
+         //$loadAssets->LoadStyleOnSpecificPage();
     }
 
     function registerAdminScriptsAndStyles()
