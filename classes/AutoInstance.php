@@ -10,7 +10,7 @@ class AutoInstance{
     public function __construct(){
         $classes=[
             'hooks'=>'jamal\jamplugin\hooks\hooks',
-            'widgetInit'=>'widgets\widgetInit',
+            'widgetInit'=>'jamal\jamplugin\widgets\widgetInit',
             'ADDCommands'=>'jamal\jamplugin\cli\ADDCommands',
         ];
 
