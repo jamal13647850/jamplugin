@@ -1,5 +1,5 @@
 <?php
-namespace widgets;
+namespace jamal\jamplugin\widgets;
 /**
  *@author Sayyed Jamal Ghasemi <https://www.linkedin.com/in/jamal1364/>
  * Date: 11/18/2017
@@ -14,7 +14,7 @@ class widgetInit
     {
 
         add_action( 'widgets_init', function(){
-            register_widget( 'widgets\social' );
+         register_widget( 'jamal\jamplugin\widgets\social' );
         } );
       
     }

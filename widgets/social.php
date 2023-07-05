@@ -2,7 +2,7 @@
 /**
  *@author Sayyed Jamal Ghasemi <https://www.linkedin.com/in/jamal1364/>
  */
-namespace widgets;
+namespace jamal\jamplugin\widgets;
 use WP_Widget;
 
 /**

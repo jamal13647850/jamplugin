@@ -21,7 +21,7 @@
             "jamal\\jamplugin\\cli\\": "classes/cli/",
             "jamal\\jamplugin\\shortcodes\\": "classes/shortcodes/",
             "jamal\\jamplugin\\": "/",
-            "widgets\\": "widgets/"
+            "jamal\\jamplugin\\widgets\\": "widgets/"
         },
         "files": ["classes/lib/class-tgm-plugin-activation.php"]
     }
