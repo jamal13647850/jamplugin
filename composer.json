@@ -3,10 +3,10 @@
     "description": "A special wordpress plugin for jamplugin.com",
     "type": "library",
     "require": {
-        "pgsavis/wp-plugin-structure": "^3.4",
+        "pgsavis/wp-plugin-structure": "^4.0",
         "pgsavis/mycustomcodes": "^2.5",
-        "twig/twig": "^3.4",
-        "yahnis-elsts/plugin-update-checker": "^4.13"
+        "twig/twig": "^3.7",
+        "yahnis-elsts/plugin-update-checker": "^5.1"
     },
     "authors": [{
         "name": "Sayyed Jamal Ghasemi",
